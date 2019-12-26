@@ -61,6 +61,8 @@
     border-radius: 8px; }
 
 .card {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 200px;
   height: 402px;
   background: #fff;
@@ -68,17 +70,11 @@
   border-radius: 5px;
   padding: 30px 14px 15px;
   margin: 0 24px 51px; }
-  .card__photo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-bottom: 45px; }
-    .card__photo-img {
-      width: 160px;
-      height: 134px; }
+  .card__image {
+    display: block;
+    width: 160px;
+    height: 134px;
+    margin: 0 auto 45px; }
   .card__name {
     font-family: Roboto, sans-serif;
     font-size: 12px;
@@ -121,8 +117,7 @@
     font-family: Roboto, sans-serif;
     font-size: 11px;
     font-weight: normal;
-    line-height: 13px;
-    text-align: right; }
+    line-height: 13px; }
   .card__price {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -138,37 +133,35 @@
       font-family: Roboto, sans-serif;
       font-size: 11px;
       font-weight: normal;
-      line-height: 13px;
-      text-align: right; }
+      line-height: 13px; }
     .card__price-value {
       font-family: Roboto, sans-serif;
       font-size: 16px;
       font-weight: bold;
-      line-height: 19px;
-      text-align: right; }
-  .card__buy {
+      line-height: 19px; }
+  .card__link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 170px; }
-    .card__buy-button {
-      width: 100%;
-      height: 40px;
-      background-color: #00acdc;
-      border: 1px solid #00acdc;
-      border-radius: 5px;
-      color: #fff;
-      font-style: normal;
-      font-family: Roboto, sans-serif;
-      font-size: 14px;
-      font-weight: bold;
-      text-transform: uppercase;
-      line-height: 16px;
-      text-align: center;
-      cursor: pointer; }
-      .card__buy-button:hover {
-        color: #00acdc;
-        background-color: #fff; }
+    width: 170px;
+    text-decoration: none; }
+  .card__button {
+    width: 100%;
+    height: 40px;
+    background-color: #00acdc;
+    border: 1px solid #00acdc;
+    border-radius: 5px;
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 16px;
+    text-align: center;
+    cursor: pointer; }
+    .card__button:hover {
+      color: #00acdc;
+      background-color: #fff; }
 
 .card__list {
   display: -webkit-box;
@@ -182,9 +175,76 @@
   max-width: 1200px;
   margin: 0 auto; }
 
-* {
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+html,
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  padding: 0;
+  margin: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset,
+img {
+  border: 0; }
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-weight: normal;
+  font-style: normal; }
+
+ol,
+ul {
+  list-style: none; }
+
+caption,
+th {
+  text-align: left; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: 100%; }
+
+q:before,
+q:after {
+  content: ""; }
+
+abbr,
+acronym {
+  border: 0; }
 
 /*# sourceMappingURL=main.css.map */
